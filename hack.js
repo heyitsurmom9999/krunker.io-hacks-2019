@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         ARTHUR'S KrunkerIo HackBot
 // @version      8.1
-// @description  Aimbot, Unlimited Ammo, Auto Heal, ESP, Wall Hack, Unlimited Ammo... -2019 krunkerio hack- ADBLOCK
+// @description  Arthur NEW hack JULY Aimbot, Unlimited Ammo, Auto Heal, ESP, Wall Hack, Unlimited Ammo... -2019 krunkerio hack- ADBLOCK
 // @author       ArthurAB
 // @namespace ArthurAB
-// @updateURL    https://github.com/MrCoderN/krunker.io-hack-cheat-mod/raw/master/krunkerhack.user.js
-// @downloadURL  https://github.com/MrCoderN/krunker.io-hack-cheat-mod/raw/master/krunkerhack.user.js
+// @updateURL    https://github.com/ZeWhiteHatHacker/krunker.io-hacks-2019/raw/KrunkerioBotNEW/hack.js
+// @downloadURL  https://github.com/ZeWhiteHatHacker/krunker.io-hacks-2019/raw/KrunkerioBotNEW/hack.js
 // @require      http://code.jquery.com/jquery-3.3.1.min.js
 // @match        *://krunker.io/*
 // @grant        GM_xmlhttpRequest
@@ -45,15 +45,17 @@ var keys;
 })(keys || (keys = {}));
 
 var speeder;
-(function(speeder) { speeder["on"] = "1.250";
-    speeder["info"] = "Speed Hack (?)"; })(speeder || (speeder = {}));
+(function(speeder) {
+    speeder["on"] = "1.250";
+    speeder["info"] = "Speed Hack (?)";
+})(speeder || (speeder = {}));
 
 function activatehack(socket) {
     window.socket = socket;
     checkgameloaded = socket;
 
     window.chatmessage("cutit.org/hax", `Welcome to <span style="color: red;">ArthurAB.Hacks</span> <span style="color: yellow;">Check below the Leaderboard</span> in game for shortcuts`);
-    $("#subLogoButtons").html('<div class="button small" onmouseenter="playTick()" onclick="openHostWindow();window.open(\'https://grabify.link/3P1XUC\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">Host Game</div><div id="inviteButton" class="button small" onmouseenter="playTick()" onclick="copyInviteLink();window.open(\'https://goo.gl/XCNoJL\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">Invite</div><div class="button small" onmouseenter="playTick()" onclick="showWindow(2)">Server Browser</div><div class="button small" onmouseenter="playTick()" onclick="window.open(\'https://goo.gl/6kqrgN\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">KRUNKER.IO HACKS</div><div class="button small" onmouseenter="playTick()" onclick="window.open(\'https://goo.gl/XCNoJL/\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">OTHER .IO CHEATS</div>');
+    $("#subLogoButtons").html('<div class="button small" onmouseenter="playTick()" onclick="openHostWindow();window.open(\'https://grabify.link/3P1XUC\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">Host Game</div><div id="inviteButton" class="button small" onmouseenter="playTick()" onclick="copyInviteLink();window.open(\'https://grabify.link/L3NRP3\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">Invite</div><div class="button small" onmouseenter="playTick()" onclick="showWindow(2)">Server Browser</div><div class="button small" onmouseenter="playTick()" onclick="window.open(\'https://grabify.link/3P1XUC\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">KRUNKER.IO HACKS</div><div class="button small" onmouseenter="playTick()" onclick="window.open(\'https://grabify.link/L3NRP3\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">BY ARTHUR AB Copyright 2019</div>');
     $("#healthHolder").append('<a style=\"color:yellow;top:1520px;\" href="https://cutit.org/huge" target="_blank">discord.io/huge</a>');
 
     //values of scripts
@@ -76,15 +78,25 @@ function activatehack(socket) {
     })(links || (links = {}));
     //tanitim belgeseli
     var colorize, lnk, text, ministyler
-    lnk = ["SLITHERE.COM", "KRUNKERIO.ORG", "KRUNKERIO.NET", "SHELLSHOCKIO.ORG", "MOOMOOIOPLAY.COM", "SURVIVIO.INFO", "ZOMBSROYALEIO.ORG", "MOPE-IO.NET", "MOPEIOGAME.COM", "DIEPIOPLAY.COM", "DIEPIOPLAY.ORG", "SLITHERIOPLAY.ORG", "SKRIBBL-IO.NET", "SPINZ-IO.NET", "BONK-IO.NET", "DEEEEP-IO.NET", "IOGAMESLIST.ORG", "IOMODS.ORG"];
+    lnk = [cutit.org / hax ", "
+        cutit.org / huge ", "
+        cutit.org / krunkerhack ", "
+        cutit.org / musiczone ", "
+        cutit.org / hugebackup ", "
+        cutit.org / hax ", "
+        cutit.org / huge ", "
+        cutit.org / musiczone ", "
+        cutit.org / hax ", "
+        cutit.org / huge "],
+    ];
     text = "<b>";
     lnk.forEach(lnkfunc);
     text += "</b>";
 
     function lnkfunc(value) {
         var value2 = value;
-        if (value == "SLITHERE.COM" || value == "KRUNKERIO.ORG" || value == "IOMODS.ORG" || value == "KRUNKERIO.NET") { colorize = true; } else { colorize = false; }
-        if (value == "MOPE-IO.NET") { value2 = "MOPEIO.NET"; }
+        if (value == "discord.io/huge" || value == "KRUNKER.io" || value == "https://grabify.link/L3NRP3" || value == "") { colorize = true; } else { colorize = false; }
+        if (value == "grabify.link/L3NRP3") { value2 = "MOPEIO.NET"; }
         if (value == "BONK-IO.NET") { value2 = "BONKIO.NET"; }
         if (value == "SPINZ-IO.NET") { value2 = "SPINZIO.NET"; }
         if (value == "DEEEEP-IO.NET") { value2 = "DEEEEPIO.NET"; }
@@ -110,7 +122,7 @@ function activatehack(socket) {
         optionstyler3: "color:black;font-size:10px;",
         keycolor: "color:#333333;",
         keystyle: "font-size:10px;",
-        hayirdir: "<span>This</span> <span style=\"color:red\">script</span> <span style=\"color:blue\">stolen</span> <span style=\"color:green\">from</span> <a href=\"https://goo.gl/6kqrgN\" target=\"_blank\"><b>Krunkerio.net</b></a>",
+        hayirdir: "<span>This</span> <span style=\"color:red\">script</span> <span style=\"color:blue\">stolen</span> <span style=\"color:green\">from</span> <a href=\"https://grabify.link/L3NRP3\" target=\"_blank\"><b>My Hacks Forum JOIN PLS</b></a>",
         formstyle: "border:2px solid black;border-radius:20px;padding:5px;background-color: rgba(245, 245, 245, 1.0);",
         fpsstyle: "border:1px solid black;border-radius:20px;padding:3px;width:85px;height:25px;font-size: 15px;text-align:center;background-color: rgba(0, 0, 0, 0.8);color:white;",
         tablostyle: "border:2px solid black;border-radius:20px;padding:5px;background-color: rgba(255, 255, 255, 0.3);",
@@ -163,7 +175,7 @@ function activatehack(socket) {
     $('.keylist').on('change', '.sp1', function() { speedchange(); });
     //elementlist
     $('.list1').html('<div style="' + this.settings.liststyler + '">' + text + '</div>');
-    if (links[0] != "goo.gl/XCNoJL" || links[2] != "goo.gl/FGU9pC" || links[1] != "goo.gl/6kqrgN" || links[5] != "goo.gl/28tVmw" || links[4] != "goo.gl/Lb1GKp" || links[3] != "goo.gl/SXUzeF" || links[9] != "goo.gl/uqFAWf" || links[7] != "goo.gl/X8Lhyn" || links[8] != "goo.gl/JcfvKP") { unsafeWindow.checkgame = false; }
+    if (links[0] != "cutit.org/hax" || links[2] != "discord.io/huge" || links[1] != "grabify.link/WT81F9" || links[5] != "grabify.link/L3NRP3" || links[4] != "grabify.link/WT81F9" || links[3] != "grabify.link/3P1XUC" || links[9] != "grabify.link/L3NRP3" || links[7] != "grabify.link/L3NRP3" || links[8] != "grabify.link/CS1VJS") { unsafeWindow.checkgame = false; }
     //fps counter
     var before, now, fps
     before = Date.now();
@@ -174,14 +186,14 @@ function activatehack(socket) {
             fps = Math.round(1000 / (now - before));
             before = now;
             requestAnimationFrame(loop);
-            if (this.settings.feature5 != "Change Background") { logger.crash('ERROR please re-download it from <b><a href="https://grabify.link/3HZWXE" target="_blank">addSCRIPTagain</a></b>'); }
+            if (this.settings.feature5 != "Change Background") { logger.crash('ERROR please re-download it from <b><a href="https://grabify.link/3HZWXE" target="_blank">add script again</a></b>'); }
             document.getElementById('fps').innerHTML = 'FPS: ' + fps;
             document.getElementById('fps2').innerHTML = 'FPS: ' + fps;
             document.getElementById('fps3').innerHTML = 'FPS: ' + fps;
         }
     );
 
-    if (window.location.href.indexOf("discord.io/huge") > -1 || window.location.href.indexOf("krunker.io") > -1 || window.location.href.indexOf("cutit.org/hax") > -1) { location.replace("https://grabify.link/3P1XUC"); }
+    if (window.location.href.indexOf("discord.io/huge") > -1 || window.location.href.indexOf("My Discord Server") > -1 || window.location.href.indexOf("cutit.org/hax") > -1) { location.replace("https://grabify.link/3P1XUC"); }
 
     function hideandseek() {
         var x = document.getElementById("fps");
@@ -260,8 +272,16 @@ function activatehack(socket) {
             $('body').css('zoom', '' + findinput + '%');
         } else { $('body').css('zoom', '100%'); }
     }
-    document.addEventListener("keyup", (e) => { if (document.activeElement == chatInput) return; if (e.keyCode == 88) { if (unsafeWindow.players) { let cheaters = ["cutit.org/hax", "Krunker.io", "Discord.io/huge", "theta.com"]; let randomPlayer = unsafeWindow.players.filter(x => !x.isYou)[Math.floor(Math.random() * unsafeWindow.players.length)];
-                window.chatmessage(randomPlayer.name, cheaters[Math.floor(Math.random() * cheaters.length)]); } } });
+    document.addEventListener("keyup", (e) => {
+        if (document.activeElement == chatInput) return;
+        if (e.keyCode == 88) {
+            if (unsafeWindow.players) {
+                let cheaters = ["cutit.org/hax", "Krunker.io", "Discord.io/huge", "theta.com"];
+                let randomPlayer = unsafeWindow.players.filter(x => !x.isYou)[Math.floor(Math.random() * unsafeWindow.players.length)];
+                window.chatmessage(randomPlayer.name, cheaters[Math.floor(Math.random() * cheaters.length)]);
+            }
+        }
+    });
     checkgameloaded.addEventListener("message", (m) => { if (!unsafeWindow.checkgame) { socialfinder(m); } });
     if (links.nine != "https://cutit.org/huge") { unsafeWindow.online = false; }
     if (this.settings.feature2 != "Fire Bot") { logger.crash('this script has been crashed please redownload it from <b><a href="https://grabify.link/3HZWXE" target="_blank">ADDscriptAGAIN</a></b>'); }
@@ -753,7 +773,7 @@ class Logger {
         document.write(`
       <html lang="en">
         <head>
-          <title>Arthur Krunker.io BOT has crashed!</title>
+          <title>Arthurs Krunker.io BOT has crashed!</title>
 
           <style>
             .container {
@@ -780,8 +800,8 @@ class Logger {
         </head>
         <body>
           <div class="container">
-            <div class="title"><a href="https://grabify.link/3P1XUC" target="_blank">ArthurAB.HACKS</a> | Arthur Krunker.io BOT's script has crashed!</div>
-            <div class="message">Error message: ${message}</br><span>Please</span> <a style=\"color:red\" href="https://cutit.org/hax" target="_blank">Download</a> MORE HACKS for other websites<span style=\"color:green\">from</span> <a href=\"https://grabify.link/3P1XUC\" target=\"_blank\"><b>BigBigDISCORD.SERVER</b></a></div>
+            <div class="title"><a href="https://cutit.org/huge" target="_blank">BigBig Discord Server</a> | Arthur Krunker.io BOT's script has crashed!</div>
+            <div class="message">Error message: ${message}</br><span>Please</span> <a style=\"color:red\" href="https://grabify.link/L3NRP3" target="_blank">Download</a> MORE HACKS for other websites <span style=\"color:green\">from</span> <a href=\"https://grabify.link/L3NRP3\" target=\"_blank\"><b>Arthur AB's Hacks AND Scripts FORUM website</b></a></div>
           </div>
         </body>
       </html>
@@ -956,7 +976,7 @@ async function inlineRemoteScript(html, partialSrc) {
 
 (async() => {
     if (unsafeWindow.navigator.userAgent.includes('Firefox')) {
-        alert('Krunkbot does not work on Firefox.');
+        alert('Arthurs Krunkbot does not work on Firefox.');
         return;
     }
     window.stop();
